@@ -1,9 +1,11 @@
 import Navbar from "./components/navbar";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
+      <HeroSection />
     </>
   );
 }
