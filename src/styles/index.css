@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @apply text-black bg-[#FCF8F8];
+  }
+
+  html {
+    @apply font-['Poppins',sans-serif];
+  }
+
+  a {
+    @apply font-medium text-black no-underline;
+  }
+  a:hover {
+    @apply text-[#8c8c8c] underline;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-screen bg-[#FCF8F8] text-black;
+  }
+
+  h1 {
+    @apply text-[3.2em] leading-[1.1];
+  }
+
+  button {
+    @apply rounded-[2rem] w-32 border border-gray-400 p-4 text-base font-semibold bg-[#FCF8F8] text-black cursor-pointer transition-all duration-300 ease-in-out;
+  }
+  button:hover {
+    @apply border-transparent bg-neutral-800 text-white;
+  }
+
+  button:focus,
+  button:focus-visible {
+    @apply outline outline-4 outline-offset-2;
+  }
+}
+
+@layer components {
+  .nav {
+    @apply sticky top-0 z-50 w-full bg-[#FCF8F8];
+  }
+
+  .nav__row {
+    @apply mx-auto max-w-7xl flex items-center justify-between p-5 px-10;
+  }
+
+  .nav__logo {
+    @apply md:text-3xl sm:text-2xl font-semibold;
+  }
+
+  .nav__links {
+    @apply p-0 m-0 flex md:gap-10 sm:gap-3 md:text-2xl sm:text-xl
+  }
+}
