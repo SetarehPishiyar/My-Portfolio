@@ -1,6 +1,6 @@
 import experienceIcon from "../assets/experience.png";
 import educationIcon from "../assets/education.png";
-import myPhoto from "../assets/me.jpg";
+import logo from "../assets/logo.png";
 
 const ExperienceSection = () => {
   return (
@@ -10,7 +10,7 @@ const ExperienceSection = () => {
         <p className="section__text2">About Me</p>
       </div>
       <div className="about__info__container">
-        <img className="about__photo" src={myPhoto} alt="" />
+        <img className="about__photo" src={logo} alt="logo" />
         <div className="about__info">
           <div className="about__cards">
             <div className="about__card">
