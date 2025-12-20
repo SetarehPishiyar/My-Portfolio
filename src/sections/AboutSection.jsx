@@ -4,10 +4,10 @@ import myPhoto from "../assets/me.jpg";
 
 const ExperienceSection = () => {
   return (
-    <section className="container about" id="abour">
-      <div className="about__header">
-        <p className="about__text1">Get To Know More</p>
-        <p className="about__text2">About Me</p>
+    <section className="container about" id="about">
+      <div className="section__header">
+        <p className="section__text1">Get To Know More</p>
+        <p className="section__text2">About Me</p>
       </div>
       <div className="about__info__container">
         <img className="about__photo" src={myPhoto} alt="" />

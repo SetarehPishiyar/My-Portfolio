@@ -4,7 +4,6 @@
 @layer base {
   :root {
     line-height: 1.5;
-    font-weight: 400;
     color-scheme: light dark;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -69,6 +68,10 @@
     @apply p-0 m-0 flex xl:gap-10 gap-5 lg:text-2xl md:text-lg text-sm;
   }
 
+  .nav__links a{
+    @apply font-light;
+  }
+
   .hero {
     @apply flex lg:flex-row flex-col justify-center gap-10 items-center min-h-130 lg:px-10;
   }
@@ -107,37 +110,73 @@
   .about {
     @apply min-h-160 flex flex-col gap-5 mt-20 lg:px-0 px-10;
   }
-  .about__header {
+  .section__header {
     @apply flex flex-col items-center lg:mb-10 gap-2;
   }
-  .about__text1 {
+  .section_text1 {
     @apply lg:text-lg text-sm text-[#5e5e5e] font-light;
   }
-  .about__text2 {
+  .section__text2 {
     @apply lg:text-5xl text-2xl font-semibold;
   }
-  .about__info__container{
+  .about__info__container {
     @apply flex lg:flex-row flex-col lg:gap-15 gap-5 items-center;
   }
   .about__photo {
     @apply lg:w-100 lg:h-100 w-70 h-70 object-cover rounded-4xl;
   }
-  .about__cards{
-    @apply flex justify-center items-center gap-5
+  .about__cards {
+    @apply flex justify-center items-center gap-5;
   }
-  .about__card{
-    @apply lg:w-80 w-55 flex flex-col items-center gap-1 border border-gray-500 p-5 rounded-4xl
+  .about__card {
+    @apply lg:w-80 w-55 flex flex-col items-center gap-1 border border-gray-500 p-5 rounded-4xl;
   }
-  .card__icon{
-    @apply lg:w-10 w-7 mb-3
+  .about__card:hover {
+    @apply -translate-y-2 hover:shadow-xl
+         transition-all duration-300;
   }
-  .card__title{
-    @apply text-lg font-semibold
+  .card__icon {
+    @apply lg:w-10 w-7 mb-3;
   }
-  .card__subtitle{
-    @apply lg:text-sm text-xs text-[#5e5e5e]
+  .card__title {
+    @apply text-lg font-semibold;
   }
-  .about__text{
-    @apply mt-10 text-[#5e5e5e] text-sm
+  .card__subtitle {
+    @apply lg:text-sm text-xs text-[#5e5e5e];
+  }
+  .about__text {
+    @apply mt-10 text-[#5e5e5e] text-sm;
+  }
+
+  .experience {
+    @apply min-h-160 flex flex-col gap-5 lg:mt-5 mt-20 lg:px-0 px-10 items-center;
+  }
+  .exp__cards {
+    @apply grid md:grid-cols-2 gap-20 justify-center items-center;
+  }
+  .exp__card {
+    @apply lg:w-130 w-100 flex flex-col items-center gap-1 border border-gray-500 p-8 rounded-4xl min-h-80;
+  }
+  .exp__card:hover {
+    @apply -translate-y-2 hover:shadow-xl
+         transition-all duration-300;
+  }
+  .exp__card__title {
+    @apply text-[#5e5e5e] font-semibold lg:text-[1.7rem] text-xl mb-5;
+  }
+  .exp__skills {
+    @apply grid grid-cols-2 gap-y-6 lg:gap-x-35 gap-x-20;
+  }
+  .exp__skill {
+    @apply flex items-start gap-2;
+  }
+  .exp__icon {
+    @apply w-8;
+  }
+  .exp__skill p {
+    @apply font-semibold lg:text-lg text-sm w-50;
+  }
+  .exp__skill small {
+    @apply text-gray-500;
   }
 }
