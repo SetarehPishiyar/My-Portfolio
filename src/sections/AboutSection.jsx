@@ -1,33 +1,33 @@
-import experienceIcon from "../assets/experience.png"
+import experienceIcon from "../assets/experience.png";
 import educationIcon from "../assets/education.png";
 import myPhoto from "../assets/me.jpg";
 
 const ExperienceSection = () => {
   return (
-    <section className="container experience" id="experience">
-      <div className="exp__header">
-        <p className="exp__text1">Get To Know More</p>
-        <p className="exp__text2">About Me</p>
+    <section className="container about" id="abour">
+      <div className="about__header">
+        <p className="about__text1">Get To Know More</p>
+        <p className="about__text2">About Me</p>
       </div>
-      <div className="exp__info__container">
-        <img className="exp__photo" src={myPhoto} alt="" />
-        <div className="exp__info">
-          <div className="exp__cards">
-            <div className="exp__card">
+      <div className="about__info__container">
+        <img className="about__photo" src={myPhoto} alt="" />
+        <div className="about__info">
+          <div className="about__cards">
+            <div className="about__card">
               <img className="card__icon" src={experienceIcon} alt="" />
               <p className="card__title">Experience</p>
               <p className="card__subtitle">No Job Experience</p>
               <p className="card__subtitle">Frontend Development intern</p>
             </div>
-            <div className="exp__card">
+            <div className="about__card">
               <img className="card__icon" src={educationIcon} alt="" />
               <p className="card__title">Education</p>
               <p className="card__subtitle">SBU Bachelors Student</p>
               <p className="card__subtitle">Since 1400</p>
             </div>
           </div>
-          <div className="exp__text__wrapper">
-            <p className="exp__text">
+          <div className="about__text">
+            <p>
               I am a Front-End Developer Intern with strong skills in HTML, CSS,
               JavaScript, and hands-on experience in React.js. I have built
               practical React projects and am familiar with modern development
@@ -43,6 +43,6 @@ const ExperienceSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default ExperienceSection
+export default ExperienceSection;

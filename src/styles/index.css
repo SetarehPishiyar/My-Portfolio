@@ -104,28 +104,28 @@
     @apply cursor-pointer;
   }
 
-  .experience {
+  .about {
     @apply min-h-160 flex flex-col gap-5 mt-20 lg:px-0 px-10;
   }
-  .exp__header {
+  .about__header {
     @apply flex flex-col items-center lg:mb-10 gap-2;
   }
-  .exp__text1 {
+  .about__text1 {
     @apply lg:text-lg text-sm text-[#5e5e5e] font-light;
   }
-  .exp__text2 {
+  .about__text2 {
     @apply lg:text-5xl text-2xl font-semibold;
   }
-  .exp__info__container{
+  .about__info__container{
     @apply flex lg:flex-row flex-col lg:gap-15 gap-5 items-center;
   }
-  .exp__photo {
+  .about__photo {
     @apply lg:w-100 lg:h-100 w-70 h-70 object-cover rounded-4xl;
   }
-  .exp__cards{
+  .about__cards{
     @apply flex justify-center items-center gap-5
   }
-  .exp__card{
+  .about__card{
     @apply lg:w-80 w-55 flex flex-col items-center gap-1 border border-gray-500 p-5 rounded-4xl
   }
   .card__icon{
@@ -137,7 +137,7 @@
   .card__subtitle{
     @apply lg:text-sm text-xs text-[#5e5e5e]
   }
-  .exp__text__wrapper{
+  .about__text{
     @apply mt-10 text-[#5e5e5e] text-sm
   }
 }

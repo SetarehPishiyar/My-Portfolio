@@ -4,7 +4,7 @@ import linkedinIcon from "../assets/linkedin.png";
 
 const HeroSection = () => {
   return (
-    <section className="container hero" id="about">
+    <section className="container hero">
       <img className="hero__img" src={myPhoto} alt="My Photo" />
 
       <div className="hero__info">
